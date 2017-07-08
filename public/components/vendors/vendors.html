@@ -1,0 +1,5 @@
+
+<input type="search" ng-model="vendor" ng-keydown="fetchVendor(vendor)">
+<div ng-repeat="vendor in vendors | filter:vendor track by $index">
+  <a ng-href="#/vendor/{{vendor._id}}">{{vendor.name}}</a>
+</div>
